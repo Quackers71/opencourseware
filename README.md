@@ -1,2 +1,4 @@
 # opencourseware
-MIT Introduction to Computer Science and Programming in Python
+MIT Stuff
+
+- Introduction to Computer Science and Programming in Python
