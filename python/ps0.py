@@ -1,8 +1,9 @@
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Spyder Editor
+Created on Wed Oct 28 10:06:41 2020
 
-This is a temporary script file.
+@author: robq
 """
 
 import numpy
