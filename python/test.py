@@ -18,9 +18,9 @@ i = 0
 
 while i < b:
     for i in range(a, b, c):
-        i *= r
+        i += r*100
         print(int(i))
-        
+               
     break
 
 

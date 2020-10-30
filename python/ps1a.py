@@ -29,10 +29,13 @@ print("Your monthly salary is $",int(monthly_salary))
 print("Your Monthly Savings are $",int(monthly_savings))
 print("The percentage you are saving is",int(saving_percentage),"%")
 
-for i in range(int(current_savings), int(required_deposit)+1, int(monthly_savings)):
-    while i < required_deposit+1:
-        r += i
-        print(i)
+i = 0
+while i < required_deposit+1:
+    for i in range(int(current_savings), int(required_deposit)+1, int(monthly_savings)):
+        i *= r/12
+        #print(int(i))
+    
+    break
 
-print(i)
-print(r)
+print("end of the while loop is",int(i))
+print("Apr is",int(r*100),"%")
