@@ -5,26 +5,40 @@ Created on Thu Oct 29 20:35:01 2020
 
 @author: robq
 """
+import time
 
-portion_down_payment = 0.25
-current_savings = 0
-r = 0.04
-
-a = 0
-b = 250001
-c = 1000
+a = 1000
+b = 1003+1
+c = 1
 r = 0.4
 i = 0
+counter = 0
 
-while i < b:
+print("start =",a)
+print("end =",b)
+print("increment =",c)
+print("r is",int(r*10),"%")
+print("\r")
+
+while i < 1004:    
     for i in range(a, b, c):
-        i += r*100
-        print(int(i))
-               
+        counter += 1
+        print("counter is",counter)
+        print("i is",i)
+        print("a is",a)
+        print("b is",b)
+        print("c is",c)
+        
+        print("r is",int(r*10),"%")
+        i = i + r
+        print("i + r is",int(i))
+        print("\r")
+        
+        # c += b
+        # print("c + b is",c)
+        # time.sleep(0.3)
+        
     break
 
-
-
-# while current_savings < 25:
-#     for i in range()
-#     current_savings+=1
+print("\ntotal of i =",int(i))
+print("The Total Count is ",counter)
